@@ -6,6 +6,7 @@
     <title>Toko Kue</title>
     <link rel="icon" type="image/png" href="https://img.freepik.com/free-vector/birthday-cake-slice-with-cherry-cartoon-vector-icon-illustration-food-object-isolated-flat-vector_138676-10583.jpg?t=st=1743594194~exp=1743597794~hmac=efe49325f8908d6b0d0b1f9aff3caeeeb1dcd7cc03121319139cdc4f733e6aa6&w=1380">
     <link rel="stylesheet" href="css11.css">
+    <link rel="stylesheet" href="v2.css">
 </head>
 <body>
 
@@ -26,7 +27,68 @@
         </div>
     </nav>
 
-
+    <div class="containermail">
+        <header>
+            <h1 class="judulmail">Hubungi Kami</h1>
+            <p class="subtitle">Silahkan pilih metode kontak yang Anda inginkan</p>
+        </header>
+        
+        <div class="contact-container">
+            <section class="social-section">
+                <h2 class="section-title">Media Sosial</h2>
+                <div class="social-buttons">
+                    <a href="https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20dengan%20produk%20Anda" class="social-btn whatsapp-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        WhatsApp (+62 812-3456-7890)
+                    </a>
+                    
+                    <a href="https://instagram.com/namapengguna" class="social-btn instagram-btn" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                        Instagram (@namapengguna)
+                    </a>
+                    
+                    <a href="mailto:emailanda@gmail.com" class="social-btn gmail-btn" target="_blank">
+                        <i class="fab fa-google"></i>
+                        Gmail (emailanda@gmail.com)
+                    </a>
+                    
+                    <a href="https://facebook.com/namapengguna" class="social-btn facebook-btn" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                        Facebook (/namapengguna)
+                    </a>
+                </div>
+            </section>
+            
+            <section class="email-section">
+                <h2 class="section-title">Kirim Pesan</h2>
+                <form class="contact-form" id="emailForm" action="https://formspree.io/f/your-form-id" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Anda</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subjek</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Pesan Anda</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Kirim Pesan
+                    </button>
+                </form>
+            </section>
+        </div>
+    </div>
 
     <footer>
         <p>&copy; 2025 Nama Toko Anda. Semua Hak Dilindungi.</p>
