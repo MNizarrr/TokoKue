@@ -437,6 +437,229 @@ footer {
     margin-bottom: 10px;
   }
 
+/* ===== CSS Styling Modern ===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fffaf7;
+    color: #333;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #ff8fa3;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffe6ea;
+}
+
+.hero {
+    background: url('https://www.lalamove.com/hubfs/toko%20kue.jpeg') center/cover no-repeat;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    background-color: #ffe6ea;
+    color: #d6336c;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #ffd6dc;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.produk-section {
+    padding: 2rem;
+    background-color: #fff0f5;
+}
+
+.produk-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.produk-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.produk-card:hover {
+    transform: translateY(-5px);
+}
+
+.produk-card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+.produk-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.produk-card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.produk-card button {
+    background-color: #ff8fa3;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.produk-card button:hover {
+    background-color: #d6336c;
+}
+
+/* ===== Tambahan: Section Testimoni ===== */
+.testimoni-section {
+    padding: 3rem 2rem;
+    background-color: #fffafc;
+    text-align: center;
+}
+
+.testimoni-section h2 {
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 2rem;
+}
+
+.testimoni-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.testimoni-card {
+    background-color: white;
+    border-radius: 16px;
+    padding: 1.5rem;
+    max-width: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.5;
+    position: relative;
+}
+
+.testimoni-card::before {
+    content: "\201C";
+    font-size: 3rem;
+    color: #ff8fa3;
+    position: absolute;
+    top: -10px;
+    left: 15px;
+}
+
+.testimoni-card .author {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #d6336c;
+}
+
+footer {
+    background: #2c2c2c;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+
 @media (max-width: 768px) {
     .contact-container {
         flex-direction: column;
