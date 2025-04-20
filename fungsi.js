@@ -1,15 +1,33 @@
-function openWhatsAppWithTemplate() {
+function openWhatsAppWithTemplateDiana() {
     const phone = "6285777847477";
     const template = `Halo, saya ingin memesan produk berikut:
 
     Nama Produk: 
-    Harga: Rp 250.000ilih: [✅] Warna / [✅] Ukuran
-    *Jumlah*: _
-    *Varian*: (Mohon p_______
-    *Alamat*: ________
-    *Metode Bayar*: [✅] Transfer / [✅] COD
+    Harga: 
+    Jumlah: 
+    Varian:
+    Alamat:
+    Metode Bayar:
 
-    Apakah ready stock? Terima kasih.`;         //harga akan di perbaiki
+    Apakah ready stock? Terima kasih.`;
+    
+    const encodedTemplate = encodeURIComponent(template);
+    const whatsappUrl = `https://wa.me/${phone}?text=${encodedTemplate}`;
+    window.location.href = whatsappUrl; 
+}
+
+function openWhatsAppWithTemplateAjeng() {
+    const phone = "6285778458399";
+    const template = `Halo, saya ingin memesan produk berikut:
+
+    Nama Produk: 
+    Harga: 
+    Jumlah: 
+    Varian:
+    Alamat:
+    Metode Bayar:
+
+    Apakah ready stock? Terima kasih.`;
     
     const encodedTemplate = encodeURIComponent(template);
     const whatsappUrl = `https://wa.me/${phone}?text=${encodedTemplate}`;

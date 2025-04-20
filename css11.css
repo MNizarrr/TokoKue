@@ -30,6 +30,20 @@ body {
     box-sizing: border-box;
 }
 
+.nav-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s;
+    margin-top: 5px;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
 .logo {
     color: white;
     font-size: 1.8rem;
@@ -135,7 +149,8 @@ body {
 .menu-container {
     margin-top: 50px;
     display: grid;
-    gap: 20px;  
+    gap: 20px;
+    padding: 0 20px;
 }
 
 .product-card {
@@ -144,6 +159,8 @@ body {
     overflow: hidden;
     transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
     cursor: pointer;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .product-card:hover {
@@ -668,6 +685,9 @@ footer {
     }
     .judul {
         font-size: 23px;
+    }
+    .product-image {
+        height: 150px;
     }
     .lokasi iframe {
         height: 350px;
